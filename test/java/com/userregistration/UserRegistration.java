@@ -3,6 +3,7 @@ package com.userregistration;
 import com.userregistartion.FirstNameValidator;
 import com.userregistartion.LastNameValidator;
 import com.userregistartion.MobileNumberValidator;
+import com.userregistartion.PasswordValidator;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -13,6 +14,8 @@ public class UserRegistration {
     LastNameValidator lastNameValidator=new LastNameValidator();
 
     MobileNumberValidator mobileNumberValidator= new MobileNumberValidator();
+
+    PasswordValidator passwordValidator=new PasswordValidator();
 
     @Test
     public void CheckFirstName_IfValid_ShouldReturnTrue() {
@@ -67,5 +70,19 @@ public class UserRegistration {
         boolean result=mobileNumberValidator.validateMobileNumber("9850178109");
         Assert.assertFalse(result);
     }
+
+    /*@Test
+    public void checkPassword_IfValid_ShouldReturnTrue() {
+
+        boolean result=passwordValidator.validatePassword("Admin123");
+        Assert.assertTrue(result);
+    }
+
+   @Test
+    public void checkpassword_IfNotValid_ShouldReturnFalse() {
+
+        boolean result=passwordValidator.validatePassword("raut");
+        Assert.assertFalse(result);
+    }*/
 
 }
