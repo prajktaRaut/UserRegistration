@@ -71,18 +71,6 @@ public class UserRegistration {
         Assert.assertFalse(result);
     }
 
-    /*@Test
-    public void checkPassword_IfValid_ShouldReturnTrue() {
 
-        boolean result=passwordValidator.validatePassword("Admin123");
-        Assert.assertTrue(result);
-    }
-
-   @Test
-    public void checkpassword_IfNotValid_ShouldReturnFalse() {
-
-        boolean result=passwordValidator.validatePassword("raut");
-        Assert.assertFalse(result);
-    }*/
 
 }

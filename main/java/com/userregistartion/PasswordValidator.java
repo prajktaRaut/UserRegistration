@@ -9,7 +9,7 @@ public class PasswordValidator {
 
     public boolean validatePassword(String password) {
 
-        PasswordPattern=Pattern.compile("[a-zA-Z0-9]{8,}");
+        PasswordPattern=Pattern.compile("([a-z]*)([A-Z]+)([a-z]*){8,}");
 
         Matcher matcher=PasswordPattern.matcher(password);
 

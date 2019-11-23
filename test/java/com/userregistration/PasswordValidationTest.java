@@ -35,8 +35,8 @@ public class PasswordValidationTest {
     {
         Object[][] checkPasswords=new Object[][]{
 
-                {"Admin123",true},
-                {"admin", false}
+               {"ASasdfdff",true},
+               {"adminasda", false}
 
         };
 
