@@ -9,7 +9,7 @@ public class PasswordValidator {
 
     public boolean validatePassword(String password) {
         
-        PasswordPattern=Pattern.compile("((?=.*\\d)(?=.*[a-z]?)(?=.*[A-Z]).{8,})$");
+        PasswordPattern=Pattern.compile("((?=.*\\d)(?=.*[a-z]?)(?=.*[A-Z])(?=.*[@#$%]){1}.{8,})$");
 
         Matcher matcher=PasswordPattern.matcher(password);
 
