@@ -8,10 +8,11 @@ public class PasswordValidator {
     private static Pattern PasswordPattern;
 
     public boolean validatePassword(String password) {
-
-        PasswordPattern=Pattern.compile("([a-z]*)([A-Z]+)([a-z]*){8,}");
+        
+        PasswordPattern=Pattern.compile("((?=.*\\d)(?=.*[a-z]?)(?=.*[A-Z]).{8,})$");
 
         Matcher matcher=PasswordPattern.matcher(password);
+
 
         if (matcher.matches())
             return true;

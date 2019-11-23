@@ -30,13 +30,16 @@ public class PasswordValidationTest {
 
     }
 
+
     @Parameterized.Parameters
     public static Collection<Object[]> checkPasswords()
     {
         Object[][] checkPasswords=new Object[][]{
 
-               {"ASasdfdff",true},
-               {"adminasda", false}
+                {"abcd",false},
+                {"abcAB12abcAB123",true},
+                {"asadminasda", false},
+                {"Abcdefgh",false}
 
         };
 
