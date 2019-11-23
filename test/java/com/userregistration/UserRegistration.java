@@ -8,6 +8,7 @@ import org.junit.Test;
 public class UserRegistration {
 
     FirstNameValidator firstNameValidator=new FirstNameValidator();
+
     LastNameValidator lastNameValidator=new LastNameValidator();
 
     @Test
@@ -49,6 +50,7 @@ public class UserRegistration {
 
 
     }
+
 
 
 
